@@ -23,7 +23,9 @@ export default [
   //eslintPluginPrettier,
   {
     plugins: {
-      prettier: eslintPluginPrettier,
+      prettier: {
+        rules: eslintPluginPrettier.rules,
+      },
     },
     rules: {
       'prettier/prettier': ['error'],

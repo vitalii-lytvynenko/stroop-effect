@@ -7,7 +7,7 @@ type ColorWordProps = {
 };
 
 export const ColorWord: React.FC<ColorWordProps> = ({ pair }) => {
-  const className = `${TAILWIND_COLORS[pair.color]} text-3xl font-bold`;
+  const className = `${TAILWIND_COLORS[pair.color]} text-2xl font-bold`;
 
   return <span className={className}>{pair.text}</span>;
 };
